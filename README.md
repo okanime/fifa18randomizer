@@ -4,5 +4,5 @@ When playing FIFA 18 with my friends, we never know which team to play with or w
 # fifa18randomizer
 Fifa 18 Team Randomizer for those moments when you can't choose which team to play with or just add a twist to your friendly games.
 
-#DEMO
+# DEMO
 http://www.rhesusmedia.com/fifa/

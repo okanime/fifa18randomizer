@@ -1,172 +1,222 @@
-<?php
-//List of teams to select from goes into the array
-//5 star teams
-$fivestarteams = array("Manchester City",
-                "Manchester United",
-                "Champions Chelsea",
-                "Bayern Munich",
-                "PSG",
-                "Juventus",
-                "Barcelona",
-                "Real Madrid",
-                "Atlético Madrid",
-                "Tottenham Hotspur"
-            );
-//we select 2 teams
-$team_keys = array_rand($fivestarteams, 2);
-//we shuffle the 2 teams selected from all the teams listed in the array
-shuffle($team_keys);
-//we assign a number to selected team and wrap it in a variable
-$randomfivestarteams1 = $fivestarteams[$team_keys[0]];
-$randomfivestarteams2 = $fivestarteams[$team_keys[1]];
+@charset "UTF-8";
+/* CSS Document */
 
-//------------------------------------------------
-//List of teams to select from goes into the array
-//4.5 star teams
-$fourhalfteams = array("Porto",
-				"Benfica",
-				"Dortmund",
-				"Napoli",
-				"Liverpool",
-				"AC Milan",
-				"Arsenal",
-				"Roma",
-				"Monaco",
-				"Inter",
-				"Villareal",
-				"Sevilla",
-				"Everton",
-				"Sporting CP",
-				"Lazio",
-				"Athletic Bilbao",
-				"Valencia",
-				"Besiktas",
-				"Schalke",
-				"Bayer 04",
-            );
-//we select 2 teams
-$team_keys = array_rand($fourhalfteams, 2);
-//we shuffle the 2 teams selected from all the teams listed in the array
-shuffle($team_keys);
-//we assign a number to selected team and wrap it in a variable
-$randomfourhalfteam1 = $fourhalfteams[$team_keys[0]];
-$randomfourhalfteam2 = $fourhalfteams[$team_keys[1]];
-//--------------------------------------------------------------
-//List of teams to select from goes into the array
-//BPL Top 6 Teams
-$bpltopsixteams = array("Manchester City",
-                "Manchester United",
-                "Champions Chelsea",
-                "Liverpool",
-                "Tottenham Hotspur",
-                "Arsenal"
-                     );
-//we select 2 teams
-$team_keys = array_rand($bpltopsixteams, 2);
-//we shuffle the 2 teams selected from all the teams listed in the array
-shuffle($team_keys);
-//we assign a number to selected team and wrap it in a variable
-$randombpltopsixteam1 = $bpltopsixteams[$team_keys[0]];
-$randombpltopsixteam2 = $bpltopsixteams[$team_keys[1]];
-//--------------------------------------------------------------
-//List of teams to select from goes into the array
-//National Teams
-$nationalteams = array("Australia",
-                "Brazil",
-                "Canada",
-                "China PR",
-                "England",
-                "France",
-                "Germany",
-                "Italy",
-                "Mexico",
-                "Netherlands",
-                "New Zealand",
-                "Norway",
-                "Spain",
-                "Sweden",
-                "United States"
-                     );
-//we select 2 teams
-$team_keys = array_rand($nationalteams, 2);
-//we shuffle the 2 teams selected from all the teams listed in the array
-shuffle($team_keys);
-//we assign a number to selected team and wrap it in a variable
-$randomnationalteam1 = $nationalteams[$team_keys[0]];
-$randomnationalteam2 = $nationalteams[$team_keys[1]];
-?>
-<!DOCTYPE html>
-<html>
-        <title>FIFA 18 Team Randomizer</title>
-        <meta name="rights" content="Code by: Gabriel Nwoffiah, Content by: Teodor Roelofse" />
-        <meta name="description" content="Fifa 18 Team Randomizer for those moments when you can't choose which team to play with or just add a twist to your friendly games." />
-	<link href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto:300" rel="stylesheet">	
-    <link href="style.css" rel="stylesheet" type="text/css">	
-    </head>
-    <body>
-    <div class="container">
-		<table width="100%" border="0" cellspacing="0" cellpadding="10">
-  <tbody>
-    <tr>
-      <td colspan="5" align="center" valign="middle"><h1>FIFA 18 Team Randomizer</h1></td>
-      </tr>
-    <tr>
-      <td colspan="5" align="center" valign="middle"><h2>5 Star Teams</h2></td>
-      </tr>
-    <tr bgcolor="#EEEEEE">
-      <td width="12%" align="center" valign="middle" class="home">Home</td>
-      <td width="32%" align="center" valign="middle"><?php echo $randomfivestarteams1; ?></td>
-      <td width="12%" align="center" valign="middle" class="versus">Vs</td>
-      <td width="32%" align="center" valign="middle"><?php echo $randomfivestarteams2; ?></td>
-      <td width="12%" align="center" valign="middle" class="away">Away</td>
-    </tr>
-    <tr>
-      <td colspan="5" align="center" valign="middle"><h2>4.5 Star Teams</h2></td>
-      </tr>
-    <tr bgcolor="#EEEEEE">
-      <td align="center" valign="middle" class="home">Home</td>
-      <td align="center" valign="middle"><?php echo $randomfourhalfteam1; ?></td>
-      <td align="center" valign="middle" class="versus">Vs</td>
-      <td align="center" valign="middle"><?php echo $randomfourhalfteam2; ?></td>
-      <td align="center" valign="middle" class="away">Away</td>
-    </tr>
-    <tr>
-      <td colspan="5" align="center" valign="middle"><h2>BPL Top 6 Teams</h2></td>
-      </tr>
-    <tr bgcolor="#EEEEEE">
-      <td align="center" valign="middle" class="home">Home</td>
-      <td align="center" valign="middle"><?php echo $randombpltopsixteam1; ?></td>
-      <td align="center" valign="middle" class="versus">Vs</td>
-      <td align="center" valign="middle"><?php echo $randombpltopsixteam2; ?></td>
-      <td align="center" valign="middle" class="away">Away</td>
-    </tr>
-    <tr>
-      <td colspan="5" align="center" valign="middle"><h2>National Teams</h2></td>
-      </tr>
-    <tr bgcolor="#EEEEEE">
-      <td align="center" valign="middle" class="home">Home</td>
-      <td align="center" valign="middle"><?php echo $randomnationalteam1; ?></td>
-      <td align="center" valign="middle" class="versus">Vs</td>
-      <td align="center" valign="middle"><?php echo $randomnationalteam2; ?></td>
-      <td align="center" valign="middle" class="away">Away</td>
-    </tr>
-    <tr>
-      <td colspan="5" align="center" valign="middle"><button class="btn" onClick="window.location.reload();">Randomize</button>	</td>
-      </tr>
-    <tr>
-      <td colspan="5" align="center" valign="middle"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- samwu -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-0259746469141395"
-     data-ad-slot="1939959491"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script></td>
-    </tr>
-  </tbody>
-</table>
-		</div>
-    </body>
-</html>
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #222222
+}
+.outer {
+    width: 100%;
+}
+.container {
+	margin: 0 auto !important;
+}
+table {
+	table-layout: inherit;
+	width: 100%;
+}
+table.centered {
+	margin-left:auto; 
+    margin-right:auto;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif !important;
+	font-weight: 700 !important;
+}
+h1 {
+	font-size: 32px;
+	margin: 0px;
+	padding: 0px;
+}
+h2 {
+	font-size: 22px;
+	margin: 25px 0px 0px;
+}
+td.home {
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	font-weight: 700;
+	background-color: #E82C0C;
+	width: 12%;
+}
+td.opponent {
+	width: 32% !important;
+}
+td.away {
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	font-weight: 700;
+	background-color: #1B51B5;
+	width: 12%;
+}
+td.versus {
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	font-weight: 700;
+	background-color: #666666;
+	width: 12%;
+}
+.btn {
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  color: #ffffff;
+	font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  background: #36B824;
+  padding: 20px 50px;
+  text-decoration: none;
+	margin: 20px 0px 30px;
+}
+
+.btn:hover {
+  background: #FFC50B;
+  text-decoration: none;
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.container {
+	margin: 0 auto !important;
+    max-width: 90% !important;
+}
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.container {
+	margin: 0 auto !important;
+    max-width: 90% !important;
+}
+}
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+	.container {
+	margin: 0 auto !important;
+    max-width: 90% !important;
+}
+}
+
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+	.container {
+	margin: 0 auto !important;
+    max-width: 90% !important;
+}
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+.container {
+	margin: 0 auto !important;
+    max-width: 90% !important;
+}
+}
+
+
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	.container {
+	margin: 0 auto !important;
+    max-width: 90% !important;
+}
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.container {
+	margin: 0 auto !important;
+    max-width: 80% !important;
+}
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.container {
+	margin: 0 auto !important;
+    max-width: 80% !important;
+}
+}
+
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+	.container {
+	margin: 0 auto !important;
+    max-width: 80% !important;
+}
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+	  .container {
+	margin: 0 auto !important;
+    max-width: 80% !important;
+}
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+	  .container {
+	margin: 0 auto !important;
+    max-width: 80% !important;
+}
+}

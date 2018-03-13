@@ -104,7 +104,7 @@ $randomnationalteam2 = $nationalteams[$team_keys[1]];
     <link href="style.css" rel="stylesheet" type="text/css">	
     </head>
     <body>
-    <div id="container">
+    <div class="container">
 		<table width="100%" border="0" cellspacing="0" cellpadding="10">
   <tbody>
     <tr>

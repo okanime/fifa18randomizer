@@ -104,69 +104,71 @@ $randomnationalteam2 = $nationalteams[$team_keys[1]];
     <link href="style.css" rel="stylesheet" type="text/css">	
     </head>
     <body>
-    <div class="container">
-		<table width="100%" border="0" cellspacing="0" cellpadding="10">
-  <tbody>
-    <tr>
-      <td colspan="5" align="center" valign="middle"><h1>FIFA 18 Team Randomizer</h1></td>
-      </tr>
-    <tr>
-      <td colspan="5" align="center" valign="middle"><h2>5 Star Teams</h2></td>
-      </tr>
-    <tr bgcolor="#EEEEEE">
-      <td width="12%" align="center" valign="middle" class="home">Home</td>
-      <td width="32%" align="center" valign="middle"><?php echo $randomfivestarteams1; ?></td>
-      <td width="12%" align="center" valign="middle" class="versus">Vs</td>
-      <td width="32%" align="center" valign="middle"><?php echo $randomfivestarteams2; ?></td>
-      <td width="12%" align="center" valign="middle" class="away">Away</td>
-    </tr>
-    <tr>
-      <td colspan="5" align="center" valign="middle"><h2>4.5 Star Teams</h2></td>
-      </tr>
-    <tr bgcolor="#EEEEEE">
-      <td align="center" valign="middle" class="home">Home</td>
-      <td align="center" valign="middle"><?php echo $randomfourhalfteam1; ?></td>
-      <td align="center" valign="middle" class="versus">Vs</td>
-      <td align="center" valign="middle"><?php echo $randomfourhalfteam2; ?></td>
-      <td align="center" valign="middle" class="away">Away</td>
-    </tr>
-    <tr>
-      <td colspan="5" align="center" valign="middle"><h2>BPL Top 6 Teams</h2></td>
-      </tr>
-    <tr bgcolor="#EEEEEE">
-      <td align="center" valign="middle" class="home">Home</td>
-      <td align="center" valign="middle"><?php echo $randombpltopsixteam1; ?></td>
-      <td align="center" valign="middle" class="versus">Vs</td>
-      <td align="center" valign="middle"><?php echo $randombpltopsixteam2; ?></td>
-      <td align="center" valign="middle" class="away">Away</td>
-    </tr>
-    <tr>
-      <td colspan="5" align="center" valign="middle"><h2>National Teams</h2></td>
-      </tr>
-    <tr bgcolor="#EEEEEE">
-      <td align="center" valign="middle" class="home">Home</td>
-      <td align="center" valign="middle"><?php echo $randomnationalteam1; ?></td>
-      <td align="center" valign="middle" class="versus">Vs</td>
-      <td align="center" valign="middle"><?php echo $randomnationalteam2; ?></td>
-      <td align="center" valign="middle" class="away">Away</td>
-    </tr>
-    <tr>
-      <td colspan="5" align="center" valign="middle"><button class="btn" onClick="window.location.reload();">Randomize</button>	</td>
-      </tr>
-    <tr>
-      <td colspan="5" align="center" valign="middle"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- samwu -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-0259746469141395"
-     data-ad-slot="1939959491"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script></td>
-    </tr>
-  </tbody>
-</table>
+		<div class="outer">
+			<div class="container">
+				<table class="centered" border="0" cellpadding="10" cellspacing="0">
+		  <tbody>
+			<tr>
+			  <td colspan="5" align="center" valign="middle"><h1>FIFA 18 Team Randomizer</h1></td>
+			  </tr>
+			<tr>
+			  <td colspan="5" align="center" valign="middle"><h2>5 Star Teams</h2></td>
+			  </tr>
+			<tr bgcolor="#EEEEEE">
+			  <td width="12%" align="center" valign="middle" class="home">Home</td>
+			  <td width="32%" align="center" valign="middle" class="opponent"><?php echo $randomfivestarteams1; ?></td>
+			  <td width="12%" align="center" valign="middle" class="versus">Vs</td>
+			  <td width="32%" align="center" valign="middle"><?php echo $randomfivestarteams2; ?></td>
+			  <td width="12%" align="center" valign="middle" class="away">Away</td>
+			</tr>
+			<tr>
+			  <td colspan="5" align="center" valign="middle"><h2>4.5 Star Teams</h2></td>
+			  </tr>
+			<tr bgcolor="#EEEEEE">
+			  <td align="center" valign="middle" class="home">Home</td>
+			  <td align="center" valign="middle"><?php echo $randomfourhalfteam1; ?></td>
+			  <td align="center" valign="middle" class="versus">Vs</td>
+			  <td align="center" valign="middle"><?php echo $randomfourhalfteam2; ?></td>
+			  <td align="center" valign="middle" class="away">Away</td>
+			</tr>
+			<tr>
+			  <td colspan="5" align="center" valign="middle"><h2>BPL Top 6 Teams</h2></td>
+			  </tr>
+			<tr bgcolor="#EEEEEE">
+			  <td align="center" valign="middle" class="home">Home</td>
+			  <td align="center" valign="middle"><?php echo $randombpltopsixteam1; ?></td>
+			  <td align="center" valign="middle" class="versus">Vs</td>
+			  <td align="center" valign="middle"><?php echo $randombpltopsixteam2; ?></td>
+			  <td align="center" valign="middle" class="away">Away</td>
+			</tr>
+			<tr>
+			  <td colspan="5" align="center" valign="middle"><h2>National Teams</h2></td>
+			  </tr>
+			<tr bgcolor="#EEEEEE">
+			  <td align="center" valign="middle" class="home">Home</td>
+			  <td align="center" valign="middle"><?php echo $randomnationalteam1; ?></td>
+			  <td align="center" valign="middle" class="versus">Vs</td>
+			  <td align="center" valign="middle"><?php echo $randomnationalteam2; ?></td>
+			  <td align="center" valign="middle" class="away">Away</td>
+			</tr>
+			<tr>
+			  <td colspan="5" align="center" valign="middle"><button class="btn" onClick="window.location.reload();">Randomize</button>	</td>
+			  </tr>
+			<tr>
+			  <td colspan="5" align="center" valign="middle"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- samwu -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-0259746469141395"
+			 data-ad-slot="1939959491"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script></td>
+			</tr>
+		  </tbody>
+		</table>
+				</div>
 		</div>
     </body>
 </html>

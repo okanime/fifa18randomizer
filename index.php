@@ -98,15 +98,16 @@ $randomnationalteam2 = $nationalteams[$team_keys[1]];
 <!DOCTYPE html>
 <html>
         <title>FIFA 18 Team Randomizer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="rights" content="Code by: Gabriel Nwoffiah, Content by: Teodor Roelofse" />
         <meta name="description" content="Fifa 18 Team Randomizer for those moments when you can't choose which team to play with or just add a twist to your friendly games." />
-	<link href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto:300" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300|Roboto+Condensed:300" rel="stylesheet">	
     <link href="style.css" rel="stylesheet" type="text/css">	
     </head>
     <body>
 		<div class="outer">
 			<div class="container">
-				<table class="centered" border="0" cellpadding="10" cellspacing="0">
+				<table border="0" cellpadding="10" cellspacing="0" class="centered">
 		  <tbody>
 			<tr>
 			  <td colspan="5" align="center" valign="middle"><h1>FIFA 18 Team Randomizer</h1></td>
